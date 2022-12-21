@@ -28,7 +28,7 @@ buttonList.forEach((button) => {
 });
 
 document.addEventListener('click', function(evt) {
-  if (evt.target.classList.contains('button')) {
+  if (evt.target.classList.contains('button') && !arr.includes(evt.target)) {
     arr.push(evt.target);
   }
   if (arr.length === buttonList.length) {
